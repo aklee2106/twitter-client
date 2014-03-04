@@ -1,0 +1,32 @@
+<li>
+  <div class='screen-name'><%=status.user.screen_name%></div>
+  <img src='<%=status.user.profile_image_url%>'>
+  <div class='followers'>Followers: <%=status.user.followers_count%></div>
+
+  <%if (status.user.followers_count > 50){ %>
+    <div id='important'>This person is important!</div>
+  <%}%>
+  
+  <div class='tweet'><%= status.text %></div>
+  
+  <%if (status.retweet_count > 10){%>
+    <div class='retweets blue'>Retweets: <%=status.retweet_count%></div>
+  <%}
+  else {%>
+    <div class='retweets'>Retweets: <%=status.retweet_count%></div>
+  <%}%>
+
+  <div>location: </div>
+  <%if (status.user.location == "Stanford University CDC"){%>
+    <div class='location red'><%= status.user.location %></div>
+  <%}
+  else {%>
+    <div class='location'><%= status.user.location %></div>
+  <%}%>
+
+  <div class='date'><%= new Date (status.created_at).toDateString()%></div>
+  <button class='expand-button'>Expand</button>
+  <div class='expand'>More information here</div>
+
+</li>
+

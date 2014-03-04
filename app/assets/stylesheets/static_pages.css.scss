@@ -1,3 +1,72 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tweet {
+  margin: 0;
+  padding: 10px; 
+  background-color: white; 
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+img {
+  padding: 0;
+}
+
+#topPeople {
+  background-color: green;
+  float: right;
+  display: inline-block;
+}
+
+#topLocations {
+  background-color: pink;
+  float: right;
+  display: inline-block;
+}
+
+body {
+  /*background-color: #F6F3E5;*/
+  background: url(https://pbs.twimg.com/profile_images/1798484398/S_Twitter_white-resize.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 25%;
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  background-color: #8C1515;
+  color: white;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  padding-left: 20px;
+}
+
+.red {
+  background-color: red; 
+  display: inline-block;
+}
+
+.blue {
+  background-color: blue;
+  display: inline-block;
+}
+
+.screen-name {
+  font-weight: bolder;
+  color: #8C1515;
+}
+
+#important {
+  background-color: yellow;
+  display: inline-block;
+}
+
+.date {
+  margin: 0 0 50px 0;
+  font-style: italic;
+  font-size: 10px;
+}

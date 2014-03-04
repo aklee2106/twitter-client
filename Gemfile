@@ -24,7 +24,7 @@ group :development do
   gem 'pry'
   gem 'pry-debugger'
 end
-
+gem 'ejs' 
 gem 'jquery-rails'
 
 gem "twitter", "~> 5.5.1"
